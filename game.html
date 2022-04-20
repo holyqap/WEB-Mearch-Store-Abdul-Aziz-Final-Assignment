@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="game.css" />
+    <script src="game.js" type="module"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body class="superCenter">
+    <main>
+      <figure class="click">
+        <figcaption>Tap on img to earn points</figcaption>
+        <img
+          src="https://yt3.ggpht.com/ytc/AKedOLSoa0vM2qqyNj4GQUXPRaNDBtqFPhBKKuLtjGcf=s900-c-k-c0x00ffffff-no-rj"
+          alt="A roblox profile picture"
+        />
+      </figure>
+      <div>points per second:</div>
+      <div id="pps">0</div>
+      <p>Points: <span id="counter">0</span></p>
+    </main>
+    <aside>
+      <div class="toolCard" data-item="Wood Chest">
+        <img
+          src="https://i.pinimg.com/236x/94/09/6b/94096bf738837c16582902d281c520bc--chest-wood-treasure-chest.jpg"
+          alt="Wood Chest"
+        />
+        <h4>Wood Chest</h4>
+        <div>points per second:</div>
+        <div>+1</div>
+
+        <div>Owned:</div>
+        <div class="inventory">0</div>
+
+        <div>Cost:</div>
+        <div><span class="cost">50</span> Points</div>
+        <div></div>
+
+        <button data-upgrade="Wood Chest" class="buy-btn">Buy</button>
+      </div>
+      <div class="toolCard" data-item="Silver Chest">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsB1HinqEjyKxtauFY7uG5Rg6bcf3Dth8UA&usqp=CAU"
+          alt="Silver Chest"
+        />
+        <h4>Silver Chest</h4>
+        <div>points per second:</div>
+        <div>+10</div>
+
+        <div>Owned:</div>
+        <div class="inventory">0</div>
+
+        <div>Cost:</div>
+        <div><span class="cost">250</span> Points</div>
+
+        <button data-upgrade="Silver Chest" class="buy-btn">Buy</button>
+      </div>
+      <div class="toolCard" data-item="Gold Chest">
+        <img
+          src="https://m.media-amazon.com/images/I/81+MnSA5mCL._AC_SX466_.jpg"
+          alt="Gold Chest"
+        />
+        <h4>Gold Chest</h4>
+        <div>points per second:</div>
+        <div>+50</div>
+
+        <div>Owned:</div>
+        <div class="inventory">0</div>
+
+        <div>Cost:</div>
+        <div><span class="cost">1000</span> Points</div>
+
+        <button data-upgrade="Gold Chest" class="buy-btn">Buy</button>
+      </div>
+    </aside>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body.superCenter {
+  min-height: 100vh;
+}
+
+.superCenter {
+  display: grid;
+  justify-items: center;
+}
+
+figure.click {
+  display: flex;
+  flex-flow: column;
+  gap: 1em;
+
+  width: min(80vw, 200px);
+  aspect-ratio: 1;
+  margin: 0;
+}
+
+figure.click img {
+  width: 100%;
+  cursor: pointer;
+}
+
+figcaption,
+p {
+  text-align: center;
+}
+
+aside {
+  width: 100%;
+  height: calc(100%);
+  padding: 0 max(3vw, 10px);
+
+  justify-content: space-evenly;
+  display: grid;
+  grid-auto-flow: column;
+  overflow: auto;
+}
+
+aside .toolCard {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 0.5em;
+
+  padding: min(0.75em, 1.5vmin) min(1em, 2vmin);
+  border-radius: 1em;
+
+  background-color: #ffffff;
+}
+
+aside .toolCard img {
+  width: 180px;
+  height: 150px;
+}
+
+aside .toolCard button {
+  grid-column-end: span 2;
+
+  padding: auto;
+  border-radius: 100px;
+
+  background-color: #ff0000;
+
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+aside .toolCard button:hover {
+  background-color: #3cff00;
+}
